@@ -1,5 +1,12 @@
 # Enterprise AI SRE Platform
 
+## Overview
+
+An SRE agent that turns SLO burn into a release decision. The `POST /agent/run` endpoint reads a burn rate and recommends a change freeze when the burn is 2 or higher, giving on-call engineers one consistent rule instead of a judgement call under pressure. A versioned `/v1` ops API adds workspaces, tenant isolation, job approval and audit records.
+
+- **Built with:** Python, pytest, Docker, GitHub Actions
+- **Scope:** Local lab with tests; it only recommends, does not call a hosted model and refuses production apply.
+
 <!-- project-guide:start -->
 ## Project guide
 
